@@ -7,7 +7,7 @@ from PIL import Image, ImageTk
 
 # 서버 IP 주소 및 포트 번호
 SERVER_IP = '93.184.216.34'
-SERVER_PORT = 3001
+SERVER_PORT = 8080
 
 # 웹캠 캡처를 위한 스레드
 class VideoStreamThread(threading.Thread):

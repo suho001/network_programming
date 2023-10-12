@@ -15,7 +15,7 @@ class VideoCaptureThread(threading.Thread):
         while not self.stop_event.is_set():
             ret, frame = self.cap.read()
             if ret:
-                frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                frame = cv2.cvtColor(frame, cv2 .COLOR_BGR2RGB)
                 photo = ImageTk.PhotoImage(image=Image.fromarray(frame))
                 label.config(image=photo)
                 label.image = photo

@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image, ImageTk
 
 # 서버 IP 주소 및 포트 번호
-SERVER_IP = '93.184.216.34'
+SERVER_IP = '127.0.0.1'
 SERVER_PORT = 8080
 
 # 웹캠 캡처를 위한 스레드

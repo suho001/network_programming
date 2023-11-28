@@ -27,7 +27,7 @@ class VideoStreamThread(threading.Thread):
             self.server_socket.sendall(img_bytes)
 
 # 클라이언트 소켓 설정
-client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)1
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.connect((SERVER_IP, SERVER_PORT))
 
 # GUI 생성

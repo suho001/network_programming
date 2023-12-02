@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Django Applications</h2>
+<ul>
+{% for key, value in verbose_dict.items %}
+    {% with url_key=key|add:':index' %}
+        <li><a href="{% url url_key %}">{{ value }}</a></li>
+{% endwith %}
+    {% endfor %}
+</ul>
+{% endblock content %}

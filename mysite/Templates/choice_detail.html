@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>{{ choice.choice_text }}</h2>
+  <ul>
+    <li>Choice: {{ choice.choice_text }}</li>
+    <li>Question: {{ choice.question.question_text }}</li>
+  </ul>
+{% endblock %}

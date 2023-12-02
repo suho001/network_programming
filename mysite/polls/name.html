@@ -1,0 +1,15 @@
+<!-- name.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'polls:name' %}" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="OK"/>
+</form>
+</body>
+</html>

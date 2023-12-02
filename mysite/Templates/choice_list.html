@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Choice List</h2>
+  <ul>
+    {% for choice in choice_list %}
+      <li><a href="{% url 'polls:choice_detail' choice.id %}">{{ choice.choice_text }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
